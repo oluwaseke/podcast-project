@@ -1,0 +1,58 @@
+@use "../variables" as v;
+
+.nav {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 76px;
+  padding: 0 93px;
+
+  font: {
+    size: 14px;
+    weight: 500;
+    line-height: 20px;
+  }
+
+  img {
+    width: 120px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    ul {
+      display: inline;
+      list-style: none;
+    }
+
+    li {
+      display: inline;
+      margin: 0px 15px;
+    }
+  }
+
+  button {
+    margin-left: 28px;
+    width: 143px;
+    height: 36px;
+    background-color: v.$primary-red;
+    color: #ffffff;
+    border-radius: 76px;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$primary-black;
+  }
+
+  a:hover {
+    color: v.$primary-red;
+  }
+  .active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid v.$primary-red;
+  }
+}

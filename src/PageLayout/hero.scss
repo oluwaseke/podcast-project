@@ -1,0 +1,223 @@
+@use "../variables" as v;
+.hero {
+  margin-bottom: 84px;
+  font-family: "Montserrat";
+  font-style: normal;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.hero-text {
+  max-width: 430px;
+  padding-bottom: 10px;
+  h1 {
+    color: v.$primary-black;
+    font: {
+      weight: 600;
+      size: 56px;
+    }
+    line-height: 72px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    span {
+      color: v.$primary-red;
+      font: {
+        weight: 600;
+        size: 56px;
+      }
+      line-height: 72px;
+      letter-spacing: -1px;
+      margin-left: -15px;
+    }
+  }
+  p {
+    font : {
+      weight: 500;
+      size: 13px;
+    }
+    line-height: 28px;
+    color: v.$grey-dark;
+  }
+}
+.search-container {
+  margin-top: 74px;
+  form {
+    display: flex;
+    align-items: center;
+  }
+  input {
+    box-shadow: v.$input-shadow;
+    width: 255px;
+    height: 50px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: v.$grey-light;
+    border: none;
+  }
+  button {
+    width: 134px;
+    height: 50px;
+    background-color: v.$primary-red;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+}
+.hero-tiles {
+  display: flex;
+  gap: 30px;
+  max-width: 810px;
+  .card {
+    position: relative;
+    height: 560px;
+    border-radius: 13px;
+    transition: all 1s;
+    display: flex;
+    padding: 60px 0;
+    overflow: hidden;
+    .red-title {
+      margin-top: auto;
+      width: 134px;
+      height: 107px;
+      background: rgb(51, 1, 0);
+      background: linear-gradient(0deg, rgba(51, 1, 0, 1) 0%, rgba(160, 1, 2, 1) 100%);
+      color: #ffffff;
+      padding: 5px 20px;
+      h2 {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font: {
+          style: italic;
+          weight: 400;
+          size: 12px;
+        }
+        line-height: 16px;
+      }
+    }
+  }
+  .card-1 {
+    width: 376px;
+    flex-shrink: 16;
+    background: {
+      image: v.$hero-gradient, url("../assets//image\ 30.png");
+      position: center;
+    }
+  }
+  .card-2 {
+    width: 182px;
+    background: {
+      image: v.$hero-gradient, url("../assets/image\ 33.png");
+      size: cover;
+      repeat: no-repeat;
+    }
+    &:hover {
+      width: 376px;
+      background-image: v.$hero-gradient, url("../assets/image\ 31.png");
+    }
+  }
+  .card-3 {
+    width: 182px;
+    background: {
+      image: v.$hero-gradient, url("../assets/image\ 32.png");
+      size: cover;
+      position: center;
+    }
+  }
+}
+.card-expanded {
+  margin-top: auto;
+  h1 {
+    display: flex;
+    align-items: center;
+    font: {
+      weight: 700;
+      size: 40px;
+    }
+    line-height: 49px;
+    letter-spacing: -1px;
+    color: #ffffff;
+  }
+  p {
+    font: {
+      style: italic;
+      weight: 400;
+      size: 24px;
+    }
+    line-height: 32px;
+    color: #ffffff;
+    margin-left: 36px;
+    margin-bottom: 20px;
+  }
+  .audio-container {
+    margin-left: 33px;
+    width: 303px;
+    height: 44px;
+    background-color: #03030385;
+    border-radius: 33px;
+    padding-left: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .p {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+    .audio-bars {
+      display: inline-flex;
+      gap: 2px;
+      align-items: center;
+    }
+    .bars {
+      background: #c4c4c470;
+      border-radius: 11px;
+      width: 2px;
+    }
+    .played-bars {
+      background: #ffffff;
+    }
+    .sm-bar {
+      height: 15px;
+    }
+    .md-bar {
+      height: 22px;
+    }
+    .lg-bar {
+      height: 31px;
+    }
+    .play {
+      color: v.$primary-red;
+      margin-left: auto;
+      margin-right: -3px;
+    }
+  }
+}
+.collapsed {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.live {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font: {
+    style: italic;
+    weight: 500;
+    size: 12px;
+  }
+  line-height: 16px;
+  color: #ffffff;
+  bottom: 0;
+  padding: 13px 34px;
+}

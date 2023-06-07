@@ -1,0 +1,329 @@
+@use "../variables" as v;
+.sport {
+  padding: 15px 93px;
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.5px;
+    color: v.$primary-black;
+    margin-bottom: 40px;
+  }
+  .sport-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    margin-bottom: 169px;
+    .recommended-card {
+      width: 193px;
+      &:hover {
+        button {
+          background-color: v.$primary-red;
+          color: #ffffff;
+        }
+        img {
+          box-shadow: 7px 6px 25px 0px #00000063;
+        }
+      }
+      img {
+        width: 193px;
+        height: 193px;
+        border-radius: 13px;
+        transition: all 0.7s;
+        margin-bottom: 18px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ff0000;
+        margin-bottom: 7px;
+      }
+      h6 {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #868686;
+        margin-bottom: 11px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 11px;
+        color: #c5c5c5;
+      }
+      button {
+        background-color: #ff000014;
+        border: 1px solid v.$primary-red;
+        border-radius: 100px;
+        width: 110px;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: v.$primary-red;
+        transition: all 0.7s;
+      }
+    }
+  }
+}
+.sport-header {
+  display: flex;
+  gap: 23px;
+  height: 509px;
+  margin-bottom: 75px;
+  .sm-world-container {
+    width: 815px;
+    height: 371px;
+    border-radius: 0px 13px 13px 0px;
+    display: flex;
+    background-color: #f5f5f5;
+  }
+  .red-bar {
+    background: v.$primary-red;
+    height: 100%;
+    min-width: 12px;
+  }
+  .sport-header-img {
+    height: 100%;
+    min-width: 238px;
+    border-radius: 0px 13px 13px 0px;
+    background-image: url("../assets/image\ 31.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sm-world {
+    min-width: 120px;
+    padding: 50px 37px 45px 48px;
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 49px;
+      letter-spacing: -1px;
+      color: v.$primary-black;
+    }
+    .hr {
+      background: v.$primary-red;
+      width: 85px;
+      height: 3px;
+      margin-bottom: 12px;
+    }
+    h5 {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 16px;
+      color: v.$grey-dark;
+      margin-bottom: 35px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 30px;
+      color: v.$grey-dark;
+      margin-bottom: 35px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icons {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      button {
+        background-color: #ff00000a;
+        border-radius: 76px;
+        width: 74px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: v.$grey-dark;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .subscribe-btn {
+      width: 151px;
+      height: 38px;
+      border: 1px solid v.$primary-red;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      color: v.$primary-red;
+      background-color: transparent;
+      transition: all 0.7s;
+      &:hover {
+        background-color: v.$primary-red;
+        color: #ffffff;
+      }
+    }
+  }
+  .sm-audio-container {
+    background-color: #f5f5f5;
+    display: flex;
+    height: 125px;
+    width: 100%;
+    gap: 15px;
+    border-radius: 13px;
+    align-items: center;
+    margin-top: 13px;
+    .audio-container {
+      margin-left: 22px;
+      width: 521px;
+      height: 56px;
+      background-color: #03030317;
+      border-radius: 33px;
+      padding-left: 34px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      .red {
+        color: v.$primary-red;
+        margin-left: auto;
+        margin-right: -5px;
+      }
+      .audio-bars {
+        display: flex;
+        gap: 3.2px;
+        align-items: center;
+      }
+      .bars {
+        background: v.$grey-light;
+        border-radius: 11px;
+        width: 3.5px;
+      }
+      .played-bars {
+        background: v.$primary-red;
+      }
+      .sm-bar {
+        height: 15px;
+      }
+      .md-bar {
+        height: 22px;
+      }
+      .lg-bar {
+        height: 31px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: v.$primary-black;
+      }
+    }
+  }
+  .rd-btn {
+    background: #e2e2e2;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dark {
+    color: v.$primary-black;
+  }
+  .red {
+    color: v.$primary-red;
+  }
+  .grey {
+    color: "#E2E2E2";
+  }
+  .up-next {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    width: 410px;
+    height: 509px;
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: v.$primary-black;
+    }
+  }
+  .up-next-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 10px 0;
+    height: 100%;
+    overflow-y: scroll;
+    .hr {
+      background-color: #e2e2e2;
+      width: 378px;
+      height: 1px;
+    }
+  }
+  .up-next-card {
+    height: 117px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    &:hover {
+      img {
+        box-shadow: 7px 6px 25px 0px #00000063;
+      }
+      button {
+        background-color: v.$primary-red;
+        color: #ffffff;
+      }
+    }
+    img {
+      width: 117px;
+      height: 117px;
+      transition: all 0.7s;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: v.$primary-red;
+      margin-bottom: 7px;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      color: v.$grey-dark;
+      margin-bottom: 19px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 16px;
+      color: v.$grey-light;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .un-btn-container {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    width: 100%;
+    button {
+      width: 110px;
+      height: 29px;
+      background-color: #ff000014;
+      border: 1px solid v.$primary-red;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      color: v.$primary-red;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      transition: all 0.7s;
+    }
+  }
+}

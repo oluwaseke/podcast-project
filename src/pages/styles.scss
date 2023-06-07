@@ -1,0 +1,120 @@
+@use "../variables" as v;
+.container {
+  height: 772px;
+  background: url(../assets/home_bg.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 32px 93px;
+  h1 {
+    color: v.$primary-black;
+    letter-spacing: -1px;
+    font: {
+      weight: 600;
+      size: 56px;
+    }
+    line-height: 72px;
+    margin-bottom: 47px;
+    span {
+      color: v.$primary-red;
+      letter-spacing: -1px;
+      font: {
+        weight: 600;
+        size: 56px;
+      }
+      line-height: 72px;
+      margin-left: -15px;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: v.$primary-black;
+    span {
+      color: v.$primary-red;
+      margin-left: -3px;
+    }
+  }
+}
+.form-container {
+  width: 530px;
+  input {
+    box-shadow: v.$input-shadow;
+    min-width: 529px;
+    height: 56px;
+    background: #ffffff;
+    font-size: larger;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 30px;
+    border: 0;
+  }
+  input::placeholder {
+    color: v.$grey-light;
+  }
+  .input-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+.form-line-element {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 19px;
+  a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: v.$primary-red;
+  }
+}
+.line {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+  .hr {
+    height: 1px;
+    width: 204px;
+    background-color: v.$grey-light;
+  }
+  p {
+    color: v.$primary-red;
+  }
+}
+.social-icons {
+  margin-top: 30px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+}
+.btn-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  .long-submit-btn {
+    width: 200px;
+  }
+  .submit-btn {
+    font-family: inherit;
+    background-color: v.$primary-red;
+    color: #ffffff;
+    min-width: 130px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.reset-container {
+  width: 770px;
+  margin-top: 120px;
+}

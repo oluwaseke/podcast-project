@@ -1,0 +1,142 @@
+@use "../variables" as v;
+
+.landing-container {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  max-width: 100%;
+  margin: 0 93px;
+}
+
+.categories-container {
+  .heading {
+    text-align: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: -0.5px;
+      color: v.$primary-black;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: v.$grey-dark;
+      margin-bottom: 30px;
+    }
+  }
+
+  .categories-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+
+    button {
+      color: v.$primary-red;
+      background-color: #ffffff;
+    }
+
+    .triangle-left {
+      transform: rotate(270deg);
+    }
+
+    .triangle-right {
+      transform: rotate(90deg);
+    }
+
+    ul {
+      display: inline;
+      list-style: none;
+    }
+
+    li {
+      display: inline;
+      margin-right: 30px;
+    }
+
+    li:last-child {
+      margin-right: 20px;
+    }
+
+    .active {
+      padding: 3px;
+      border-bottom: 5px solid #ff0000;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 77px;
+
+    .card {
+      height: 350px;
+      width: 193px;
+
+      img {
+        height: 193px;
+        width: 193px;
+        border-radius: 13px;
+        transition: transform 0.5s;
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ff0000;
+      }
+
+      h6 {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 14px;
+        color: #868686;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+        color: #c5c5c5;
+        margin-bottom: 5px;
+      }
+
+      button {
+        display: flex;
+        border: 1px solid #ff0000;
+        background-color: #ffffff;
+        align-items: center;
+        width: 151px;
+        height: 38px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #ff0000;
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        button {
+          background-color: #ff0000;
+          color: #ffffff;
+        }
+
+        img {
+          transform: scale(1.1);
+          border-radius: 13px;
+          box-shadow: (7px 6px 25px rgba(0, 0, 0, 0.39));
+        }
+      }
+    }
+  }
+}
