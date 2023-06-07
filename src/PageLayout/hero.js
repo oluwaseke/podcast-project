@@ -6,8 +6,6 @@ import Icon from "@mdi/react";
 import React from "react";
 
 export default function Hero() {
-  /* const [isOpen, setIsOpen] = React.useState(true); */
-
   const onMouseOverHandler = () => {
     let element1 = document.getElementById("expanded-text-1");
     let element2 = document.getElementById("red-bar-2");
